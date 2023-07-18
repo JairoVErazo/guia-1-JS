@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Calculadora de Nota Final</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Guía-1</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lista de ejercicios
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./Ejercicio_1.html">ejercicio 1</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_2.html">ejercicio 2</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_3.html">ejercicio 3</a></li>
+                    <li><a class="dropdown-item" href="./Ejercicio_4.html">ejercicio 4</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_5.html">ejercicio 5</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_6.html">ejercicio 6</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_7.html">ejercicio 7</a></li>
+                    <li><a class="dropdown-item" href="./Ejercicio_8.html">ejercicio 8</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_9.html">ejercicio 9</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_10.html">ejercicio 10</a></li>
+                    <li><a class="dropdown-item" href="./ejercicio_11.html">ejercicio 11</a></li>
+                    <li><a class="dropdown-item" href="./Ejercicio_12.html">ejercicio 12</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+  <main class="container mt-5">
+    <h1 class="d-flex justify-content-center">Calculadora de Nota Final</h1>
+    <form id="formulario" class="mt-4 row justify-content-center">
+      <div class="mb-3 col-md-8">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="carnet" class="form-label">Carnet</label>
+        <input type="text" class="form-control" id="carnet" required>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="notaExamen" class="form-label">Nota de Examen</label>
+        <input type="number" step="any" class="form-control" id="notaExamen" required>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="notaTareas" class="form-label">Nota de Tareas</label>
+        <input type="number" step="any" class="form-control" id="notaTareas" required>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="notaAsistencia" class="form-label">Nota de Asistencia</label>
+        <input type="number" step="any" class="form-control" id="notaAsistencia" required>
+      </div>
+      <div class="mb-3 col-md-8">
+        <label for="notaInvestigacion" class="form-label">Nota de Investigación</label>
+        <input type="number" step="any" class="form-control" id="notaInvestigacion" required>
+      </div>
+      <button type="submit" class="btn btn-primary col-md-8">Calcular</button>
+    </form>
+
+    <div id="resultado" class="mt-4 table-responsive-sm">
+      <h3>Alumnos Registrados:</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Carnet</th>
+            <th>Nota Final</th>
+          </tr>
+        </thead>
+        <tbody id="tablaAlumnos">
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="footer mt-auto bg-dark text-center py-3 text-light">
+    <h4 class="m-5">Jairo Erazo y
+        Noé Hercules
+    </h4>
+    <p>Todos los derechos reservados</p>
+  </footer>
+  <script src="./assets/js/ejercicio2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
